@@ -22,6 +22,9 @@ def create_image_container(image_url, caption=None):
         f"{GRAPH_URL}/{IG_USER_ID}/media",
         data=payload
     )
+
+    print("INSTAGRAM RESPONSE:", r.text)  # 🔥 THIS IS CRITICAL
+
     r.raise_for_status()
     return r.json()["id"]
 
