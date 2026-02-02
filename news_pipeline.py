@@ -7,7 +7,7 @@ from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import time
-from datetime import datetime, timedelta
+
 
 DB_FILE = "queue_db.json"
 
@@ -193,7 +193,6 @@ def add_trends_to_queue(db, trends):
         if x.get('story_id')
     }
 
-
     existing_urls = {x['url'] for x in db['queue']} | {x['url'] for x in db['posted']}
 
     for t in trends:
@@ -212,7 +211,7 @@ def add_trends_to_queue(db, trends):
 
         db['queue'].append({
             "story_id": t["story_id"],
-            "topic": t["topic"],
+            "topic": topic_name,
             "subtopics": t["subtopics"],
             "title": art["title"],
             "desc": art["desc"],
@@ -224,17 +223,23 @@ def add_trends_to_queue(db, trends):
         })
 
         existing_urls.add(art['url'])
+        print("🧾 Queue size before posting:", len(db["queue"]))
+
+
 
 from datetime import timedelta
 
 def topic_allowed(db, topic, cooldown_hours=6):
-    last_time = db["recent_topics"].get(topic)
-    if not last_time:
+    last_time_iso = db["recent_topics"].get(topic)
+    if not last_time_iso:
         return True
+
+    last_time = datetime.fromisoformat(last_time_iso)
     if last_time.tzinfo is None:
         last_time = last_time.replace(tzinfo=timezone.utc)
 
     return datetime.now(timezone.utc) - last_time > timedelta(hours=cooldown_hours)
+
 
     # return datetime.now() - datetime.fromisoformat(last_time) > timedelta(hours=cooldown_hours)
 
