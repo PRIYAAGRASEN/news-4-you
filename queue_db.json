@@ -139,6 +139,20 @@
             "source": "SCIRP Open Access",
             "score": 3,
             "added_time": "2026-02-02T15:41:40.873467+00:00"
+        },
+        {
+            "story_id": "0441d9c8d79dfb1540fbdeece0834774",
+            "topic": "The Union Budget 2026",
+            "subtopics": [
+                "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights"
+            ],
+            "title": "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights",
+            "desc": "Budget 2026 Highlights | FM Nirmala Sitharaman Union Budget Speech, Key Highlights Live updates: Check out the key focus areas areas of the Union Budget 2026 speech by FM Nirmala Sitharaman, highlights, summaries, income tax slabs, policy announcements and economic outlook in real time.",
+            "url": "https://indianexpress.com/article/india/budget-2026-live-updates-nirmala-sitharaman-union-budget-highlights-income-tax-slabs-goods-cost-10505936/",
+            "image": "https://images.indianexpress.com/2026/02/Union-Budget-2026-Nirmala-Sitharaman.jpg.jpeg",
+            "source": "The Indian Express",
+            "score": 7,
+            "added_time": "2026-02-02T16:49:42.853119+00:00"
         }
     ],
     "posted": [
@@ -197,12 +211,27 @@
             "source": "Hindustan Times",
             "score": 4,
             "added_time": "2026-02-02T12:20:27.326365+00:00"
+        },
+        {
+            "story_id": "53da2fa05da4d38ef87c2e65b4a2dbd1",
+            "topic": "India",
+            "subtopics": [
+                "21-Year Tax Holiday, Rs 2,000 Crore Safe Harbour: India's Data Centre Bet"
+            ],
+            "title": "21-Year Tax Holiday, Rs 2,000 Crore Safe Harbour: India's Data Centre Bet",
+            "desc": "India has offered foreign companies providing cloud services a 21-year tax holiday in return for setting up data centres in the country, in an announcement designed to boost the growth of the information technology and artificial intelligence spaces.",
+            "url": "https://www.ndtv.com/india-news/union-budget-2026-news-tax-holiday-til-2047-for-artificial-intelligence-data-centres-in-india-10929254",
+            "image": "https://c.ndtvimg.com/2024-05/evpggus_data-centre-generic_625x300_15_May_24.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738",
+            "source": "NDTV",
+            "score": 7,
+            "added_time": "2026-02-02T16:49:42.853094+00:00"
         }
     ],
     "recent_topics": {
         "Budget India Business News: Prices": "2026-02-02T12:20:27.326405+00:00",
         "India Business News:": "2026-02-02T13:11:56.935074+00:00",
         "NASA": "2026-02-02T14:47:50.699033+00:00",
-        "India News": "2026-02-02T15:41:40.873503+00:00"
+        "India News": "2026-02-02T15:41:40.873503+00:00",
+        "India": "2026-02-02T16:49:42.853134+00:00"
     }
 }
