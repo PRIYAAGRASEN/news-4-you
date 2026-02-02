@@ -139,20 +139,6 @@
             "source": "SCIRP Open Access",
             "score": 3,
             "added_time": "2026-02-02T15:41:40.873467+00:00"
-        },
-        {
-            "story_id": "0441d9c8d79dfb1540fbdeece0834774",
-            "topic": "The Union Budget 2026",
-            "subtopics": [
-                "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights"
-            ],
-            "title": "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights",
-            "desc": "Budget 2026 Highlights | FM Nirmala Sitharaman Union Budget Speech, Key Highlights Live updates: Check out the key focus areas areas of the Union Budget 2026 speech by FM Nirmala Sitharaman, highlights, summaries, income tax slabs, policy announcements and economic outlook in real time.",
-            "url": "https://indianexpress.com/article/india/budget-2026-live-updates-nirmala-sitharaman-union-budget-highlights-income-tax-slabs-goods-cost-10505936/",
-            "image": "https://images.indianexpress.com/2026/02/Union-Budget-2026-Nirmala-Sitharaman.jpg.jpeg",
-            "source": "The Indian Express",
-            "score": 7,
-            "added_time": "2026-02-02T16:49:42.853119+00:00"
         }
     ],
     "posted": [
@@ -225,6 +211,20 @@
             "source": "NDTV",
             "score": 7,
             "added_time": "2026-02-02T16:49:42.853094+00:00"
+        },
+        {
+            "story_id": "0441d9c8d79dfb1540fbdeece0834774",
+            "topic": "The Union Budget 2026",
+            "subtopics": [
+                "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights"
+            ],
+            "title": "Budget 2026 Highlights LIVE Updates: FM Nirmala Sitharaman Union Budget Speech & Key Highlights",
+            "desc": "Budget 2026 Highlights | FM Nirmala Sitharaman Union Budget Speech, Key Highlights Live updates: Check out the key focus areas areas of the Union Budget 2026 speech by FM Nirmala Sitharaman, highlights, summaries, income tax slabs, policy announcements and economic outlook in real time.",
+            "url": "https://indianexpress.com/article/india/budget-2026-live-updates-nirmala-sitharaman-union-budget-highlights-income-tax-slabs-goods-cost-10505936/",
+            "image": "https://images.indianexpress.com/2026/02/Union-Budget-2026-Nirmala-Sitharaman.jpg.jpeg",
+            "source": "The Indian Express",
+            "score": 7,
+            "added_time": "2026-02-02T16:49:42.853119+00:00"
         }
     ],
     "recent_topics": {
@@ -232,6 +232,7 @@
         "India Business News:": "2026-02-02T13:11:56.935074+00:00",
         "NASA": "2026-02-02T14:47:50.699033+00:00",
         "India News": "2026-02-02T15:41:40.873503+00:00",
-        "India": "2026-02-02T16:49:42.853134+00:00"
+        "India": "2026-02-02T16:49:42.853134+00:00",
+        "The Union Budget 2026": "2026-02-02T17:42:46.523435+00:00"
     }
 }
