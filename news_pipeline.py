@@ -7,6 +7,15 @@ from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import time
+import nltk
+try:
+    nltk.data.find("corpora/wordnet")
+except LookupError:
+    nltk.download("wordnet")
+    nltk.download("omw-1.4")
+from nltk.corpus import wordnet
+from nltk.stem import WordNetLemmatizer
+from rapidfuzz import process, fuzz
 
 
 DB_FILE = "queue_db.json"
@@ -102,41 +111,99 @@ def fetch_master_news(query):
     return articles
 
 # ---------------- NLP + SIMILARITY ----------------
-def normalize_topic(name, label):
-    """
-    Cleans and standardizes entity names based on spaCy labels.
-    """
+
+lemmatizer = WordNetLemmatizer()
+
+KNOWN_ENTITIES = [
+    "Narendra Modi",
+    "Joe Biden",
+    "Amit Shah"
+]
+
+ACRONYMS = {
+    "govt": "Government",
+    "us": "United States",
+    "u.s.": "United States",
+    "pm": "Prime Minister"
+}
+
+def resolve_entity(name):
+    for e in KNOWN_ENTITIES:
+        if fuzz.partial_ratio(name.lower(), e.lower()) > 80:
+            return e
+    return None
+
+
+def canonical_synonym(word):
+    try:
+        word = word.lower()
+        lemma = lemmatizer.lemmatize(word)
+        synsets = wordnet.synsets(lemma, pos=wordnet.NOUN)
+        if not synsets:
+            return None
+
+        best = max(synsets[0].lemmas(), key=lambda l: l.count())
+        return best.name().replace("_", " ").title()
+    except:
+        return None
+
+
+def normalize_topic(name, label=None):
     name = name.strip()
 
-    acronym_map = {
-        "US": "United States",
-        "U.S.": "United States",
-        "UK": "United Kingdom",
-        "U.K.": "United Kingdom",
-        "PMO": "PMO India",
-        "BJP": "BJP"
-    }
+    # Acronym expansion
+    if name.lower() in ACRONYMS:
+        return ACRONYMS.get(name.lower())
 
-    if name.upper() in acronym_map:
-        return acronym_map[name.upper()]
+    # Person/entity fuzzy match
+    entity = resolve_entity(name)
+    if entity:
+        return entity
 
-    aliases = {
-        "narendra modi": "Narendra Modi",
-        "pm modi": "Narendra Modi",
-        "modi": "Narendra Modi",
-        "amit shah": "Amit Shah",
-        "joe biden": "Joe Biden",
-        "biden": "Joe Biden"
-    }
+    # WordNet lexical normalization (ONLY for common nouns)
+    if label not in ["PERSON", "ORG", "GPE"]:
+        synonym = canonical_synonym(name)
+        if synonym:
+            return synonym
 
-    lower_name = name.lower()
-    if lower_name in aliases:
-        return aliases[lower_name]
-
-    if name.isupper() and len(name) <= 5:
-        return name
-
+    # Fallback formatting
     return name.title()
+
+# def normalize_topic(name, label):
+#     """
+#     Cleans and standardizes entity names based on spaCy labels.
+#     """
+#     name = name.strip()
+
+#     acronym_map = {
+#         "US": "United States",
+#         "U.S.": "United States",
+#         "UK": "United Kingdom",
+#         "U.K.": "United Kingdom",
+#         "PMO": "PMO India",
+#         "BJP": "BJP"
+#     }
+
+#     if name.upper() in acronym_map:
+#         return acronym_map[name.upper()]
+
+#     aliases = {
+#         "narendra modi": "Narendra Modi",
+#         "pm modi": "Narendra Modi",
+#         "modi": "Narendra Modi",
+#         "amit shah": "Amit Shah",
+#         "joe biden": "Joe Biden",
+#         "biden": "Joe Biden"
+#     }
+
+#     lower_name = name.lower()
+#     if lower_name in aliases:
+#         return aliases[lower_name]
+
+#     if name.isupper() and len(name) <= 5:
+#         return name
+
+#     return name.title()
 
 
 def cluster_articles(articles, threshold=0.32):
@@ -294,8 +361,17 @@ def get_next_article(query="technology india"):
 
     for a in raw:
         doc = nlp(a["title"] + " " + a["desc"])
-        a["entities"] = [normalize_topic(e.text, e.label_) for e in doc.ents
-                        if e.label_ in ["ORG", "PERSON", "GPE"]]
+        entities = []
+        for e in doc.ents:
+            if e.label_ in ["ORG", "PERSON", "GPE"]:
+                clean = normalize_topic(e.text, e.label_)
+                if clean:
+                    entities.append(clean)
+
+        a["entities"] = list(set(entities))  # remove duplicates
+
+        # a["entities"] = [normalize_topic(e.text, e.label_) for e in doc.ents
+        #                 if e.label_ in ["ORG", "PERSON", "GPE"]]
 
     clusters, sim_matrix, tfidf_matrix = cluster_articles(raw)
 
