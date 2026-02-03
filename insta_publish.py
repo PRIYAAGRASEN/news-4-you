@@ -27,7 +27,7 @@ def create_image_container(image_url, caption=None):
     return data.get("id")
 
 
-def wait_until_ready(creation_id, timeout=60):
+def wait_until_ready(creation_id, timeout=120):
     start = time.time()
     while time.time() - start < timeout:
         r = requests.get(
@@ -37,10 +37,16 @@ def wait_until_ready(creation_id, timeout=60):
                 "access_token": ACCESS_TOKEN
             }
         )
-        status = r.json().get("status_code")
+        res = r.json()
+        status = res.get("status_code")
         if status == "FINISHED":
             return True
-        time.sleep(3)
+        elif status== "ERROR":
+            print(f" Container {creation_id} failed: {res.get('error_description')}")
+            return False
+        
+        print(f"{creation_id} still {status}... waiting 10s")
+        time.sleep(10)
     return False
 
 
@@ -61,7 +67,7 @@ def create_carousel_container(children_ids, caption):
     return data.get("id")
 
 
-def publish_container(creation_id, retries=5):
+def publish_container(creation_id, retries=3):
     for i in range(retries):
         r = requests.post(
             f"{GRAPH_API}/{INSTAGRAM_USER_ID}/media_publish",
@@ -75,7 +81,11 @@ def publish_container(creation_id, retries=5):
             return r.json()
 
         print(f"⚠️ Publish attempt {i+1} failed:", r.text)
-        time.sleep(10)
+        # If it's a "Media not ready" error, wait longer
+        # If it's a "Rate limit" error, wait MUCH longer
+        wait_time = (i + 1) * 40 
+        print(f"💤 Sleeping {wait_time}s before retrying...")
+        time.sleep(wait_time)
 
     return None
 
@@ -102,6 +112,12 @@ def post_carousel(image_urls, caption):
     if not carousel_id:
         raise Exception("Failed to create carousel container")
 
+    # 4. NEW: Wait for the CAROUSEL itself to be ready
+    # This is likely why you got the 9007 error!
+    print("⏳ Waiting for carousel to finalize...")
+    if not wait_until_ready(carousel_id):
+        print("❌ Carousel container failed to finalize.")
+        return False
     # 4️⃣ publish (SAFE)
    
     result = publish_container(carousel_id)
