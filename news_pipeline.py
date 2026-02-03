@@ -323,12 +323,27 @@ def mark_posted(db, item):
     db["posted"] = db["posted"][-50:]
 
 # ---------------- MAIN ENTRY ----------------
+def summarize_text(text, max_sentences=2):
+    if not text or len(text) <= 200:
+        return text
+    
+    doc = nlp(text)
+    sentences = [sent.text.strip() for sent in doc.sents]
+    
+    summary = " ".join(sentences[:max_sentences])
+    
+    if len(summary) > 200:
+        summary = summary[:201] + "..."
+        
+    return summary
+
 def get_next_article(query="technology india"):
     db = load_db()
     clean_recent_topics(db)
     raw = fetch_master_news(query)
-
+    
     for a in raw:
+        a["desc"] = summarize_text(a.get("desc", ""))
         doc = nlp(a["title"] + " " + a["desc"])
         entities = []
         for e in doc.ents:
