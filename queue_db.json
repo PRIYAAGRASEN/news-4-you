@@ -365,6 +365,23 @@
             "source": "CNA",
             "score": 3,
             "added_time": "2026-02-02T14:47:50.698993+00:00"
+        },
+        {
+            "story_id": "a71e03f0a68778eec09c69d25707b767",
+            "topic": "India",
+            "subtopics": [
+                "Donald Trump announces trade deal between US and India with tariffs slashed",
+                "US will lower India tariffs to 18% after Modi agrees to stop buying Russian oil, says Trump",
+                "US agrees to drop tariffs after India stops Russian oil purchases",
+                "Trump slashes tariffs on India after Modi agrees to stop buying Russian oil"
+            ],
+            "title": "Donald Trump announces trade deal between US and India with tariffs slashed",
+            "desc": "The US president says his social media platform that a deal had been struck, which includes a reduction of tariffs on Indian products in exchange for New Delhi no longer buying oil from Russia.",
+            "url": "https://www.abc.net.au/news/2026-02-03/trump-says-us-india-trade-deal-agreed-to-with-modi/106298034",
+            "image": "https://live-production.wcms.abc-cdn.net.au/dbc50267783d5984bc87a0acad8e265d?impolicy=wcms_watermark_news&cropH=1601&cropW=2846&xPos=0&yPos=151&width=862&height=485&imformat=generic",
+            "source": "Australian Broadcasting Corporation",
+            "score": 5,
+            "added_time": "2026-02-03T08:46:38.078523+00:00"
         }
     ],
     "recent_topics": {
@@ -372,7 +389,7 @@
         "India Business News:": "2026-02-02T13:11:56.935074+00:00",
         "NASA": "2026-02-02T14:47:50.699033+00:00",
         "India News": "2026-02-02T15:41:40.873503+00:00",
-        "India": "2026-02-03T02:37:49.791380+00:00",
+        "India": "2026-02-03T08:46:38.078556+00:00",
         "The Union Budget 2026": "2026-02-02T17:42:46.523435+00:00",
         "Nirmala Sitharaman": "2026-02-02T23:34:33.103675+00:00",
         "Technology & Science, Times": "2026-02-03T04:36:19.329485+00:00",
