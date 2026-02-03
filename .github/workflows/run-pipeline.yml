@@ -3,7 +3,7 @@ name: Insta News Carousel Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # every hour (UTC)
+    - cron: "0 */4 * * *" #will only run if the hour is divisible by 4(UTC)
 
 permissions:
   contents: write
