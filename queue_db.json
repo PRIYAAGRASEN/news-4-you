@@ -29,20 +29,6 @@
             "added_time": "2026-02-02T12:20:27.326391+00:00"
         },
         {
-            "story_id": "f0d706ad03052022f204462533ec38ac",
-            "topic": "Nirmala Sitharaman'S",
-            "subtopics": [
-                "Did Union Budget not focus on poll-bound states enough? Nirmala Sitharaman's clarification"
-            ],
-            "title": "Did Union Budget not focus on poll-bound states enough? Nirmala Sitharaman's clarification",
-            "desc": "Nirmala Sitharaman, in a press briefing, said the government has focused on both election and non-election states in the Union Budget.| India News",
-            "url": "https://www.hindustantimes.com/india-news/did-union-budget-not-focus-on-poll-bound-states-enough-nirmala-sitharamans-clarification-101769943979328.html",
-            "image": "https://www.hindustantimes.com/ht-img/img/2026/02/01/550x309/PTI02-01-2026-000373B-0_1769944120725_1769944134460.jpg",
-            "source": "Hindustan Times",
-            "score": 3,
-            "added_time": "2026-02-02T14:47:50.699019+00:00"
-        },
-        {
             "story_id": "d593c82c2e139e323d0fda5b1d162766",
             "topic": "Uzbekistan",
             "subtopics": [
@@ -382,6 +368,20 @@
             "source": "Australian Broadcasting Corporation",
             "score": 5,
             "added_time": "2026-02-03T08:46:38.078523+00:00"
+        },
+        {
+            "story_id": "f0d706ad03052022f204462533ec38ac",
+            "topic": "Nirmala Sitharaman'S",
+            "subtopics": [
+                "Did Union Budget not focus on poll-bound states enough? Nirmala Sitharaman's clarification"
+            ],
+            "title": "Did Union Budget not focus on poll-bound states enough? Nirmala Sitharaman's clarification",
+            "desc": "Nirmala Sitharaman, in a press briefing, said the government has focused on both election and non-election states in the Union Budget.| India News",
+            "url": "https://www.hindustantimes.com/india-news/did-union-budget-not-focus-on-poll-bound-states-enough-nirmala-sitharamans-clarification-101769943979328.html",
+            "image": "https://www.hindustantimes.com/ht-img/img/2026/02/01/550x309/PTI02-01-2026-000373B-0_1769944120725_1769944134460.jpg",
+            "source": "Hindustan Times",
+            "score": 3,
+            "added_time": "2026-02-02T14:47:50.699019+00:00"
         }
     ],
     "recent_topics": {
@@ -396,6 +396,7 @@
         "Etaf": "2026-02-03T04:51:21.135375+00:00",
         "Karnataka": "2026-02-03T05:55:21.625671+00:00",
         "Apple": "2026-02-03T06:59:38.124757+00:00",
-        "Singapore": "2026-02-03T07:50:20.014458+00:00"
+        "Singapore": "2026-02-03T07:50:20.014458+00:00",
+        "Nirmala Sitharaman'S": "2026-02-03T09:51:28.720056+00:00"
     }
 }
