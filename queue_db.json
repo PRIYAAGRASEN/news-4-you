@@ -29,20 +29,6 @@
             "added_time": "2026-02-02T12:20:27.326391+00:00"
         },
         {
-            "story_id": "7876cc7457a83ea7ba699af89cf5bed5",
-            "topic": "Singapore",
-            "subtopics": [
-                "Singapore to set up new national space agency on Apr 1"
-            ],
-            "title": "Singapore to set up new national space agency on Apr 1",
-            "desc": "The agency will let Singapore maximise space technology applications for national and regional needs, says Minister-in-charge of Energy and Science and Technology Tan See Leng.",
-            "url": "https://www.channelnewsasia.com/singapore/national-space-agency-singapore-technology-legislation-5899941",
-            "image": "https://dam.mediacorp.sg/image/upload/s--9hhADuya--/c_crop,h_900,w_1600,x_0,y_0/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/02/02/wwz_4793.jpg?itok=3q0Tgqme",
-            "source": "CNA",
-            "score": 3,
-            "added_time": "2026-02-02T14:47:50.698993+00:00"
-        },
-        {
             "story_id": "f0d706ad03052022f204462533ec38ac",
             "topic": "Nirmala Sitharaman'S",
             "subtopics": [
@@ -365,6 +351,20 @@
             "source": "Mint",
             "score": 3,
             "added_time": "2026-02-02T12:20:27.326352+00:00"
+        },
+        {
+            "story_id": "7876cc7457a83ea7ba699af89cf5bed5",
+            "topic": "Singapore",
+            "subtopics": [
+                "Singapore to set up new national space agency on Apr 1"
+            ],
+            "title": "Singapore to set up new national space agency on Apr 1",
+            "desc": "The agency will let Singapore maximise space technology applications for national and regional needs, says Minister-in-charge of Energy and Science and Technology Tan See Leng.",
+            "url": "https://www.channelnewsasia.com/singapore/national-space-agency-singapore-technology-legislation-5899941",
+            "image": "https://dam.mediacorp.sg/image/upload/s--9hhADuya--/c_crop,h_900,w_1600,x_0,y_0/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/02/02/wwz_4793.jpg?itok=3q0Tgqme",
+            "source": "CNA",
+            "score": 3,
+            "added_time": "2026-02-02T14:47:50.698993+00:00"
         }
     ],
     "recent_topics": {
@@ -378,6 +378,7 @@
         "Technology & Science, Times": "2026-02-03T04:36:19.329485+00:00",
         "Etaf": "2026-02-03T04:51:21.135375+00:00",
         "Karnataka": "2026-02-03T05:55:21.625671+00:00",
-        "Apple": "2026-02-03T06:59:38.124757+00:00"
+        "Apple": "2026-02-03T06:59:38.124757+00:00",
+        "Singapore": "2026-02-03T07:50:20.014458+00:00"
     }
 }
