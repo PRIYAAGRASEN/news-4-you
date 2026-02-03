@@ -381,7 +381,8 @@ def get_next_article(query="technology india"):
 
     chosen=get_next_post(db)
 
-    
+    if chosen:
+        mark_posted(db, chosen)  # This handles the 'pop' from queue to posted
 
     save_db(db)
 
