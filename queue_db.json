@@ -43,34 +43,6 @@
             "added_time": "2026-02-02T23:34:33.103620+00:00"
         },
         {
-            "story_id": "9440dae363d22b0871ddcc96baa1065f",
-            "topic": "Ip",
-            "subtopics": [
-                "'Sholay' Studio Sippy Films Repositions as Character IP Company"
-            ],
-            "title": "'Sholay' Studio Sippy Films Repositions as Character IP Company",
-            "desc": "Sippy Films, the Indian production house behind 'Sholay,' is restructuring as a character IP-led studio with backing from Kuberans.",
-            "url": "https://variety.com/2026/film/news/sholay-studio-sippy-films-character-ip-company-1236649380/",
-            "image": "https://variety.com/wp-content/uploads/2025/06/Sholay.jpg?w=1000&h=563&crop=1",
-            "source": "Variety",
-            "score": 3,
-            "added_time": "2026-02-02T23:34:33.103640+00:00"
-        },
-        {
-            "story_id": "6cc2ae852c29570040d081f607996784",
-            "topic": "China",
-            "subtopics": [
-                "Strategies for Enhancing the Competitiveness of L Seed Company from an Innovation Perspective"
-            ],
-            "title": "Strategies for Enhancing the Competitiveness of L Seed Company from an Innovation Perspective",
-            "desc": "Innovation has become a key driver for seed enterprises to build core competitiveness. Taking L Seed Company as a case study, this paper constructs a three-dimensional analytical framework\u2014\u201ctechnological innovation-variety innovation-model innovation\u201d\u2014based on innovation theory. It delves into core issues within the enterprise regarding innovation resource allocation, innovation outcome transformation, and innovation collaboration mechanisms. The study proposes targeted and feasible strategies for enhancing competitiveness, offering practical pathways for China\u2019s seed industry to achieve innovation-driven high-quality development.",
-            "url": "https://www.scirp.org/journal/paperinformation?paperid=149325",
-            "image": "https://file.scirp.org/image/jss2015012714222187.jpg",
-            "source": "SCIRP Open Access",
-            "score": 3,
-            "added_time": "2026-02-02T23:34:33.103649+00:00"
-        },
-        {
             "story_id": "05e46305f6747450926d03e997f8d531",
             "topic": "Ibam",
             "subtopics": [
@@ -181,6 +153,20 @@
             "source": "Research Matters",
             "score": 3,
             "added_time": "2026-02-03T12:33:54.005577+00:00"
+        },
+        {
+            "story_id": "4ebc39773a2c6cc1ef2f4ab2dd3a779f",
+            "topic": "India",
+            "subtopics": [
+                "2027: Semiconductors, Manufacturing, and Tax Reforms"
+            ],
+            "title": "2027: Semiconductors, Manufacturing, and Tax Reforms",
+            "desc": "The India budget highlights ISM 2.0, deeper electronics localization, tax and customs reforms, and infrastructure spending to support long-term manufacturing growth.",
+            "url": "https://www.eetimes.com/india-budget-2026-2027-semiconductors-manufacturing-and-tax-reforms/",
+            "image": "https://www.eetimes.com/wp-content/uploads/AdobeStock_1394952095.jpeg?fit=2816%2C1536",
+            "source": "EE Times",
+            "score": 4,
+            "added_time": "2026-02-03T14:50:52.455929+00:00"
         }
     ],
     "posted": [
@@ -410,6 +396,50 @@
             "source": "SCIRP Open Access",
             "score": 3,
             "added_time": "2026-02-02T15:41:40.873467+00:00"
+        },
+        {
+            "story_id": "9440dae363d22b0871ddcc96baa1065f",
+            "topic": "Ip",
+            "subtopics": [
+                "'Sholay' Studio Sippy Films Repositions as Character IP Company"
+            ],
+            "title": "'Sholay' Studio Sippy Films Repositions as Character IP Company",
+            "desc": "Sippy Films, the Indian production house behind 'Sholay,' is restructuring as a character IP-led studio with backing from Kuberans.",
+            "url": "https://variety.com/2026/film/news/sholay-studio-sippy-films-character-ip-company-1236649380/",
+            "image": "https://variety.com/wp-content/uploads/2025/06/Sholay.jpg?w=1000&h=563&crop=1",
+            "source": "Variety",
+            "score": 3,
+            "added_time": "2026-02-02T23:34:33.103640+00:00"
+        },
+        {
+            "story_id": "64f817b66c92e05e78273cd2d7a16be9",
+            "topic": "India",
+            "subtopics": [
+                "India-U.S. trade deal LIVE: Industry welcomes deal, sees tariff cuts boosting growth and competitiveness",
+                "US will lower India tariffs to 18% after Modi agrees to stop buying Russian oil, says Trump",
+                "US agrees to drop tariffs after India stops Russian oil purchases"
+            ],
+            "title": "India-U.S. trade deal LIVE: Industry welcomes deal, sees tariff cuts boosting growth and competitiveness",
+            "desc": "India-U.S. trade deal LIVE: PM Modi announced \u201cMade in India\u201d products will now attract a reduced tariff of 18% in the U.S., on February 3, 2026. Follow The Hindu for more updates.",
+            "url": "https://www.thehindu.com/business/Economy/india-us-trade-deal-the-hindu-live-updates-reactions-details-tariffs-trump-modi-february-3-2026/article70585870.ece",
+            "image": "https://th-i.thgim.com/public/incoming/nyikbw/article70585868.ece/alternates/LANDSCAPE_1200/2025-10-03T083313Z_1080850780_RC2FSFAN6I1C_RTRMADP_3_INDIA-TECH-USA.JPG",
+            "source": "The Hindu",
+            "score": 7,
+            "added_time": "2026-02-03T14:50:52.455904+00:00"
+        },
+        {
+            "story_id": "6cc2ae852c29570040d081f607996784",
+            "topic": "China",
+            "subtopics": [
+                "Strategies for Enhancing the Competitiveness of L Seed Company from an Innovation Perspective"
+            ],
+            "title": "Strategies for Enhancing the Competitiveness of L Seed Company from an Innovation Perspective",
+            "desc": "Innovation has become a key driver for seed enterprises to build core competitiveness. Taking L Seed Company as a case study, this paper constructs a three-dimensional analytical framework\u2014\u201ctechnological innovation-variety innovation-model innovation\u201d\u2014based on innovation theory. It delves into core issues within the enterprise regarding innovation resource allocation, innovation outcome transformation, and innovation collaboration mechanisms. The study proposes targeted and feasible strategies for enhancing competitiveness, offering practical pathways for China\u2019s seed industry to achieve innovation-driven high-quality development.",
+            "url": "https://www.scirp.org/journal/paperinformation?paperid=149325",
+            "image": "https://file.scirp.org/image/jss2015012714222187.jpg",
+            "source": "SCIRP Open Access",
+            "score": 3,
+            "added_time": "2026-02-02T23:34:33.103649+00:00"
         }
     ],
     "recent_topics": {
@@ -417,7 +447,7 @@
         "India Business News:": "2026-02-02T13:11:56.935074+00:00",
         "NASA": "2026-02-02T14:47:50.699033+00:00",
         "India News": "2026-02-02T15:41:40.873503+00:00",
-        "India": "2026-02-03T08:46:38.078556+00:00",
+        "India": "2026-02-03T14:50:52.455947+00:00",
         "The Union Budget 2026": "2026-02-02T17:42:46.523435+00:00",
         "Nirmala Sitharaman": "2026-02-02T23:34:33.103675+00:00",
         "Technology & Science, Times": "2026-02-03T04:36:19.329485+00:00",
@@ -426,6 +456,8 @@
         "Apple": "2026-02-03T06:59:38.124757+00:00",
         "Singapore": "2026-02-03T07:50:20.014458+00:00",
         "Nirmala Sitharaman'S": "2026-02-03T09:51:28.720056+00:00",
-        "Uzbekistan": "2026-02-03T12:33:54.005611+00:00"
+        "Uzbekistan": "2026-02-03T12:33:54.005611+00:00",
+        "Ip": "2026-02-03T13:13:09.139109+00:00",
+        "China": "2026-02-03T15:55:39.237290+00:00"
     }
 }
